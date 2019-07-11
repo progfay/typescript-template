@@ -2,6 +2,7 @@
   "name": "typescript-template",
   "version": "1.0.0",
   "description": "",
+  "files": [ "lib" ],
   "main": "./src/index.js",
   "scripts": {
     "prebuild": "rm -rf lib",
