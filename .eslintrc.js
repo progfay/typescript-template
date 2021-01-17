@@ -1,21 +1,28 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es6': true
+  env: {
+    'jest/globals': true,
+    browser: true,
+    es6: true
   },
-  'extends': 'standard',
-  'globals': {
-    'Atomics': 'readonly',
-    'SharedArrayBuffer': 'readonly'
+  extends: [
+    'standard',
+    'standard-with-typescript',
+    'prettier',
+    'prettier/@typescript-eslint',
+    'prettier/react'
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module',
-    'project': './tsconfig.json'
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    project: './tsconfig.eslint.json'
   },
-  'plugins': ['@typescript-eslint'],
-  'rules': {
-    '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
-  }
+  rules: {
+    'prettier/prettier': 'error'
+  },
+  plugins: ['@typescript-eslint', 'jest', 'prettier']
 }
