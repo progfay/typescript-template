@@ -1,5 +1,5 @@
-const hello = (name: string = "world"): void => {
-  console.log(`Hello, ${name}!`);
-};
+const hello = (name: string = 'world'): void => {
+  console.log(`Hello, ${name}!`)
+}
 
-hello("TypeScript");
+hello('TypeScript')
