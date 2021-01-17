@@ -12,6 +12,7 @@
     "prebuild": "rm -rf lib",
     "build": "tsc -p ./tsconfig.json",
     "start": "node ./lib/index.js",
+    "test": "jest --coverage",
     "lint": "eslint -c ./.eslintrc.js .",
     "format": "prettier --write . && eslint --fix -c ./.eslintrc.js ."
   },
