@@ -22,7 +22,7 @@ module.exports = {
     project: './tsconfig.eslint.json'
   },
   rules: {
-    'prettier/prettier': 'error'
+    'comma-dangle': ['error', 'always-multiline']
   },
-  plugins: ['@typescript-eslint', 'jest', 'prettier']
+  plugins: ['@typescript-eslint', 'jest']
 }
