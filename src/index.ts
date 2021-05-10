@@ -1,4 +1,4 @@
-const hello = (name: string = "world"): void => {
+const hello = (name = "world"): void => {
   console.log(`Hello, ${name}!`);
 };
 

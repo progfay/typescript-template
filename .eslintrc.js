@@ -2,21 +2,18 @@ module.exports = {
   env: {
     "jest/globals": true,
     browser: true,
-    es6: true,
+    es2020: true,
   },
-  extends: ["prettier"],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
-  },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: "module",
     project: "./tsconfig.eslint.json",
   },
-  rules: {
-    "comma-dangle": ["error", "always-multiline"],
-  },
-  plugins: ["@typescript-eslint", "jest"],
+  plugins: ["jest"],
 };
