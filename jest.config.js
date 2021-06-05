@@ -1,7 +1,7 @@
 module.exports = {
   moduleFileExtensions: ["ts", "js"],
   transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
+    "^.+\\.ts$": "ts-jest",
   },
   globals: {
     "ts-jest": {
@@ -9,5 +9,5 @@ module.exports = {
     },
   },
   collectCoverageFrom: ["src/**/*.ts"],
-  testMatch: ["**/tests/**/*.test.ts"],
+  testMatch: ["**/*.test.ts"],
 };
