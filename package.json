@@ -34,7 +34,7 @@
   "devDependencies": {
     "@progfay/tsconfig": "1.0.1",
     "@types/core-js": "2.5.5",
-    "@types/jest": "27.0.2",
+    "@types/jest": "27.0.3",
     "@types/node": "16.11.7",
     "@typescript-eslint/eslint-plugin": "5.4.0",
     "@typescript-eslint/parser": "5.4.0",
