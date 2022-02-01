@@ -35,7 +35,7 @@
     "@progfay/tsconfig": "1.0.1",
     "@types/core-js": "2.5.5",
     "@types/jest": "27.4.0",
-    "@types/node": "16.11.21",
+    "@types/node": "16.11.22",
     "@typescript-eslint/eslint-plugin": "5.10.2",
     "@typescript-eslint/parser": "5.10.2",
     "eslint": "8.8.0",
